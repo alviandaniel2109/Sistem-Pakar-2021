@@ -1,6 +1,6 @@
 # SISTEM PAKAR Naive Bayes
 
-aive Bayes adalah algoritme klasifikasi yang paling mudah dan cepat, yang cocok untuk sebagian besar data. Pengklasifikasi Naive Bayes berhasil digunakan dalam berbagai aplikasi seperti pemfilteran spam, klasifikasi teks, analisis sentimen, dan sistem pemberi rekomendasi. Ini menggunakan teorema Bayes tentang probabilitas untuk prediksi kelas yang tidak diketahui
+Naive Bayes adalah algoritme klasifikasi yang paling mudah dan cepat, yang cocok untuk sebagian besar data. Pengklasifikasi Naive Bayes berhasil digunakan dalam berbagai aplikasi seperti pemfilteran spam, klasifikasi teks, analisis sentimen, dan sistem pemberi rekomendasi. Ini menggunakan teorema Bayes tentang probabilitas untuk prediksi kelas yang tidak diketahui
 
 # Analisis PROGRAM
 
