@@ -1,57 +1,56 @@
-#SISTEM PAKAR BFS dan DFS
+# SISTEM PAKAR Naive Bayes
 
-Analisis PROGRAM BFS
+aive Bayes adalah algoritme klasifikasi yang paling mudah dan cepat, yang cocok untuk sebagian besar data. Pengklasifikasi Naive Bayes berhasil digunakan dalam berbagai aplikasi seperti pemfilteran spam, klasifikasi teks, analisis sentimen, dan sistem pemberi rekomendasi. Ini menggunakan teorema Bayes tentang probabilitas untuk prediksi kelas yang tidak diketahui
 
-Pada Baris 8-14 
-```
-Grafik yang diilustrasikan diwakili menggunakan daftar yang berdekatan. Cara mudah untuk melakukan ini di Python adalah dengan menggunakan struktur data kamus, di mana setiap vertex memiliki daftar node yang berdekatan.
-```
+# Analisis PROGRAM
 
-Pada Baris 17
+Pada Baris 1-4 
 ```
-visited ;  adalah daftar yang digunakan untuk melacak node yang dikunjungi
+Merupakan Syntax dalam memanggil function dalam Library yang dibutuhkan seperti function : datasets, train_test_split, GaussianNB(naive bayes), metrics  
 ```
 
-Pada Baris 18 
+Pada Baris 7
 ```
-queue ; adalah daftar yang digunakan untuk melacak node yang saat ini dalam antrian
+Melakukan Load dataset yaitu diambil dari dataset breast cancer milik library sklearn
+```
+
+Pada Baris 10-14 
+```
+Menampilkan features name dan target name dari datasets breast cancer yang telah didefenisikan menjadi cancer
+```
+
+Pada Baris 17-24
+```
+Line 17 : Menampilkan data feature dalam bentuk shape
+Line 19 : Menampilkan data dari 0 atau awal sampai 5 data terakhir dari data
+Line 22 : Menampilkan target yaitu labels yang akan digunakan untuk dilakukan train data cancer
+```
+
+Pada Baris 28 
+```
+Melakukan training data yaitu cancer.data, dengan labels dengan size test 0,3 , dengan random state atau nomor acak semu yaitu 100
+```
+
+Pada Baris 32
+```
+Membuat dan Melakukan Classifier Gaussian yang telah disediakan sklearn, dan mendefenisikannya menjadi gnb
 ```
 
 Pada Baris 35
 ```
-Argumen fungsi berisi daftar, bentuk kamus, dan node awal .bfs visited graph 1
+Melakukan Training data set menggunakan model training data X_train, dan y_train
 ```
 
-Pada Baris 20-31
+Pada Baris 38
 ```
-Mengikuti algoritma yang dijelaskan di atas :bfs
-Pertama memeriksa dan menambahkan node awal ke daftar .visited .queue, bfs akan mencari dan memproses berdasarkan level bukan kedalaman.
-Kemudian, menunggu antrian berdasarkan level dimulai dari '1' berada di level 0, dan mengeluarkan node yaitu 1 dari antrian,  dan menambahkan node lain atau level dibawahnya ke antrian, dan menandai node yang telah dikunjungi atau dilewati.
-Ini berlanjut hingga antrean kosong.
-Contoh : Node 1 di level 0 apabila sudah tidak ada node dilevel 0 maka akan menuju level 1 yang memiliki node dan jika sudah tidak ada node lagi di level 1 maka akan seperti itu seterusnya, berdasarkan level, level 0 :1
-level 1 :3-2
-level 2 :6-4-5 
-Outputnya : 1-3-2-6-4-5
+Setelah melakukan training kita akan melakukan Predict atau prediksi terhadap data yang telah di train dan memasukkannya pada X_test
 ```
-
-
-Analisis PROGRAM DFS
 
 Pada Baris 41
 ```
-adalah satu set yang digunakan untuk melacak node yang dikunjungi.
+Menampilkan score accuracy dan hasil classifier dan output y_test dan y_pred
 ```
 
-Pada Baris 43-52
-```
-Mengikuti algoritma yang dijelaskan di atas: dfs akan memproses berdasarkan kedalaman bukan level
-Pertama-tama memeriksa apakah node saat ini tidak terlihat - jika ya, itu ditambahkan dalam set.visited
-Contoh : pada node 1 akan dicek kedalaman dari node tersebut dan ditandai, 1 - 3 - 6 dilanjutkan 2 - 4 - 5 
-Kemudian untuk setiap node saat ini, fungsi dipanggil lagi di .dfs
-dan akan dipanggil ketika semua node dikunjungi. Fungsi kemudian kembali dan hingga semua node berhasil diproses diantrian.
-```
+# Output
 
-Pada Baris 52
-```
-Fungsi ini dipanggil dan dilewatkan set, dalam bentuk kamus, dan , yang merupakan node awal.dfs visited graph 1
-```
+Dimana dari metode naive bayes output 0 berarti orang yang tidak terkena penyakit cancer breast dan 1 untuk orang yang terkena penyakit cancer breast

@@ -4,27 +4,28 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn import metrics
 
 #Load dataset
-wine = datasets.load_breast_cancer()
+cancer = datasets.load_breast_cancer()
 
 # print the names of the 13 feature
-print("Features: ", wine.feature_names)
-
+print("Features: ", cancer.feature_names)
+print("")
 # print the label type of wine(class_0, class_1, class_2)
-print("Labels: ", wine.target_names)
+print("Labels: ", cancer.target_names)
+print("")
 
 # print data(feature)shape
-wine.data.shape
+cancer.data.shape
 
-print (wine.data[0:5])
+print (cancer.data[0:5])
 
 # print the wine labels (0:Class_0, 1:class_2, 2:class_2)
-print (wine.target)
+print (cancer.target)
 
 # Import train_test_split function
 
 
 # Split dataset into training set and test set
-X_train, X_test, y_train, y_test = train_test_split(wine.data, wine.target, test_size=0.3,random_state=109) # 70% training and 30% test
+X_train, X_test, y_train, y_test = train_test_split(cancer.data, cancer.target, test_size=0.3,random_state=1000) # 70% training and 30% test
 
 
 #Create a Gaussian Classifier
