@@ -2,7 +2,7 @@
 
 logika Fuzzy adalah teknik atau metode yang sering dipakai untuk mengatasi hal yang tidak pasti pada masalah – masalah yang mempunyai banyak jawaban
 Study kasus yang menghitung waktu kelembaban dari beberapa faktor pendukung lainnya menggunakan algoritma Skfuzzy
-Tingkat Kelembaban dinilai berdasarkan 3 penilaian yaitu jarak dan waktu yang ditempuh
+Tingkat Kelembaban dinilai berdasarkan 3 penilaian yaitu temperature, moisture, humidity 
 
 RULENYA :
 
